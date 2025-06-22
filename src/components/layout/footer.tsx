@@ -7,7 +7,9 @@ export const Footer = () => {
   };
   return (
     <footer className=" flex flex-col justify-center p-3 items-center gap-2 text-muted-foreground">
-      <Button onClick={handlePayment}>EU QUERO O CATÁLOGO</Button>
+      <Button className="font-semibold" onClick={handlePayment}>
+        COMPRAR LISTA DE FORNECEDORES
+      </Button>
       <div className="max-w-4xl">
         <div className="text-center">Importante</div>
         <div className="text-sm">
