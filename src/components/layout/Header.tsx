@@ -3,7 +3,7 @@ import { ThemeButtom } from "../theme-buttom";
 
 export const Header = () => {
   return (
-    <header>
+    <div>
       <div className="flex items-center justify-center p-1">
         <h1 className="font-semibold text-red-500">ATENÇÃO:</h1>
         <h3> Assista o vídeo até o final e...</h3>
@@ -17,6 +17,6 @@ export const Header = () => {
           </span>
         </h2>
       </div>
-    </header>
+    </div>
   );
 };

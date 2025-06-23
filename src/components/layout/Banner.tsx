@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { ButtonItem } from "../ButtonItem";
 import { Button } from "../ui/button";
 
 export const Banner = () => {
@@ -25,12 +25,7 @@ export const Banner = () => {
           Clique no botão abaixo
         </span>
       </div>
-      <Button
-        onClick={handlePayment}
-        className="flex m-auto font-semibold animate-bounce mt-7"
-      >
-        GARANTA SEU CATÁLOGO AGORA
-      </Button>
+      <ButtonItem text="GARANTA SEU CATÁLOGO AGORA" />
     </div>
   );
 };

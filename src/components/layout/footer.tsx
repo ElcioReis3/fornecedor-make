@@ -7,7 +7,10 @@ export const Footer = () => {
   };
   return (
     <footer className=" flex flex-col justify-center p-3 items-center gap-2 text-muted-foreground">
-      <Button className="font-semibold" onClick={handlePayment}>
+      <Button
+        className="font-semibold shadow-md shadow-pink-300"
+        onClick={handlePayment}
+      >
         COMPRAR LISTA DE FORNECEDORES
       </Button>
       <div className="max-w-4xl">
