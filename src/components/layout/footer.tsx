@@ -25,16 +25,6 @@ export const Footer = () => {
           quantidade adquirida, estando sujeitos a alterações sem aviso prévio.
         </div>
       </div>
-      <div className="max-w-4xl">
-        <div className="text-center">Aviso Legal</div>
-        <div className="text-xs text-center">
-          Este site não oferece garantias ou promessas de rendimentos. Seus
-          resultados dependem exclusivamente das suas ações, decisões e
-          dedicação. Ao utilizar este site, você declara estar ciente e
-          concordar que não poderá nos responsabilizar por quaisquer perdas,
-          prejuízos ou resultados obtidos, em qualquer momento ou circunstância.
-        </div>
-      </div>
     </footer>
   );
 };

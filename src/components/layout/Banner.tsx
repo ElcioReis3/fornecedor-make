@@ -8,13 +8,15 @@ export const Banner = () => {
   };
   return (
     <div className="w-full max-w-3xl m-auto p-3">
-      <Image
-        src="https://dicaparis.com/wp-content/uploads/sites/31/2015/08/comprando-maquiagem-paris.jpg"
-        width={600}
-        height={300}
-        alt="Maquiagem"
-        className="w-full m-auto"
-      />
+      <iframe
+        width="600"
+        height="500"
+        className="w-full"
+        src="https://www.youtube.com/embed/X2NeE7VAVqw"
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
       <div className="text-center">
         Acesse agora os melhores fornecedores de maquiagem do Brasil e comece
         seu negócio HOJE!{" "}
