@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <footer className=" flex flex-col justify-center p-3 items-center gap-2 text-muted-foreground">
       <Button
-        className="font-semibold shadow-md shadow-pink-300"
+        className="w-full flex m-auto font-semibold my-3 shadow-md shadow-purple-300 md:text-2xl md:p-5"
         onClick={handlePayment}
       >
         COMPRAR LISTA DE FORNECEDORES

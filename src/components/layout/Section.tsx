@@ -3,6 +3,8 @@ import Image from "next/image";
 import { CardItem } from "../Card";
 import { CarouselItens } from "../CarouselItens";
 import { Button } from "../ui/button";
+import Link from "next/link";
+import { Link2Icon } from "lucide-react";
 
 export const Section = () => {
   const handlePayment = () => {
@@ -35,7 +37,7 @@ export const Section = () => {
           <CarouselItens />
           <div>
             <Button
-              className="flex items-center justify-center m-auto my-3"
+              className="w-full flex m-auto font-semibold animate-pulse my-3 shadow-md shadow-purple-300 md:text-2xl md:p-5"
               onClick={handlePayment}
             >
               EU QUERO O CATÁLOGO
@@ -70,6 +72,22 @@ export const Section = () => {
           compra em até 7 dias após o recebimento do produto ou serviço, sem
           necessidade de justificar a desistência e sem custos adicionais.{" "}
         </div>
+      </div>
+      <div className="w-full max-2xl m-auto text-center">
+        <Image
+          src={"/images/poster.png"}
+          alt="código de defesa do consumidor"
+          width={700}
+          height={400}
+          className="m-auto"
+        />
+        <Link
+          className="w-36 m-auto flex justify-center bg-fuchsia-700 text-white p-1 rounded-md mt-1"
+          href={"https://www.instagram.com/tudo_d_sp/?hl=pt-br"}
+        >
+          <Link2Icon className="" />
+          Instagram
+        </Link>
       </div>
     </div>
   );
