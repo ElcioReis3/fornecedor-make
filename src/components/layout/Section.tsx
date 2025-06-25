@@ -5,6 +5,15 @@ import { CarouselItens } from "../CarouselItens";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { Link2Icon } from "lucide-react";
+import { ShopeeAdCard } from "../ShopeeAdCard";
+import { linkProducts2 } from "@/data/jsonLinks";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
 
 export const Section = () => {
   const handlePayment = () => {
@@ -88,6 +97,35 @@ export const Section = () => {
           <Link2Icon />
           Instagram
         </Link>
+      </div>
+
+      <div className="w-full max-w-4xl m-auto p-7">
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-2">
+            {linkProducts2.map((item, index) => (
+              <CarouselItem
+                key={index}
+                className="pl-2 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+              >
+                <div className="w-full h-full">
+                  <ShopeeAdCard
+                    title={item.title}
+                    imageUrl={item.image}
+                    link={item.offerLink}
+                    price={item.price}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </div>
   );
