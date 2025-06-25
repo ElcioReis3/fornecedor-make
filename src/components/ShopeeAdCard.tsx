@@ -29,9 +29,19 @@ export function ShopeeAdCard({
         />
       </Link>
       <CardContent className="pt-4">
-        <h3 className="text-base font-semibold line-clamp-2 ">{title}</h3>
+        <Link href={link}>
+          <Image
+            src="/images/Shopee.png"
+            alt={title}
+            width={50}
+            height={40}
+            className=" object-cover m-auto"
+          />
+
+          <h3 className="text-base font-semibold line-clamp-2 ">{title}</h3>
+        </Link>
         <p className="text-xs md:text-sm text-muted-foreground">
-          Oferta especial na Shopee
+          Oferta especial Shopee
         </p>
         <span>R$ {price}</span>
       </CardContent>
