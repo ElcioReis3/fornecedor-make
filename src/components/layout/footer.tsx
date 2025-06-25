@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className="">
       <div className="flex flex-col justify-center items-center gap-2 text-muted-foreground p-3">
         <Button
-          className="w-full flex m-auto font-semibold my-3 shadow-md shadow-purple-300 md:text-2xl md:p-5"
+          className="w-full max-w-2xl flex m-auto font-semibold my-3 shadow-md shadow-purple-300 md:text-2xl md:p-5"
           onClick={handlePayment}
         >
           COMPRAR LISTA DE FORNECEDORES

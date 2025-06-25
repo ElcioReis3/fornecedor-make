@@ -12,7 +12,7 @@ export const Section = () => {
   };
   return (
     <div>
-      <div className="w-full max-w-xl p-3 m-auto">
+      <div className="w-full max-w-2xl p-3 m-auto">
         <CardItem
           title="Lista de Fornecedores de Maquiagem"
           description="Transforme Paixão em Lucro: Comece Agora na Revenda de Maquiagem!"
@@ -60,7 +60,7 @@ export const Section = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-xl flex gap-3 items-center justify-center p-3 m-auto">
+      <div className="w-full max-w-2xl flex gap-3 items-center justify-center p-3 m-auto">
         <Image
           src={"/images/7dias.png"}
           alt="código de defesa do consumidor"
@@ -85,7 +85,7 @@ export const Section = () => {
           className="w-36 m-auto flex justify-center bg-fuchsia-700 text-white p-1 rounded-md mt-1"
           href={"https://www.instagram.com/tudo_d_sp/?hl=pt-br"}
         >
-          <Link2Icon className="" />
+          <Link2Icon />
           Instagram
         </Link>
       </div>
